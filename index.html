@@ -1,0 +1,656 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+   
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#0057FF",
+        "accent": "#FFC425",
+        "light": "#F0F0F0",
+        "dark": "#333333",
+        "border": "#D8D8D8"
+      },
+      "fontFamily": {
+        "sans": [
+          "Inter",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+     
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="font-sans text-dark bg-white">
+    <!-- Mobile Header with Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo font-bold text-xl text-primary">Tech Fair 2025</div>
+            <button id="menuToggle" class="text-dark focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+       
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobileMenu" class="hidden bg-white absolute w-full shadow-lg">
+            <nav class="container mx-auto px-4 py-3">
+                <ul class="space-y-4 pb-4">
+                    <li><span class="block py-2 text-primary font-medium cursor-pointer">Home</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">About the Event</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">Agenda</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">Speakers</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">Sponsors</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">Tickets</span></li>
+                    <li><span class="block py-2 text-dark hover:text-primary cursor-pointer">Contact</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-16 pb-20">
+        <!-- Hero Section -->
+        <section id="hero" class="h-[500px] bg-gradient-to-br from-primary/90 to-primary relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/111f1e1818-ab1282fd9ad5d74130c0.png" alt="tech conference crowd networking, vibrant atmosphere, professional event">
+            </div>
+            <div class="container mx-auto px-4 py-10 h-full flex flex-col justify-center text-white relative z-10">
+                <div class="max-w-xs">
+                    <span class="bg-accent text-dark px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">OCT 8-10, 2025</span>
+                    <h1 class="text-3xl font-bold mb-2">Connect. Expand. Grow.</h1>
+                    <h2 class="text-xl font-medium mb-4">Kosovo's Premier Tech Job Fair &amp; AI Conference</h2>
+                    <p class="text-sm mb-6">Swiss Diamond Hotel, Prishtina</p>
+                    <div class="flex flex-col space-y-3">
+                        <span class="bg-accent hover:bg-accent/90 text-dark font-bold py-3 px-6 rounded-lg text-center shadow-lg transition cursor-pointer">Register Now</span>
+                        <span class="bg-white/20 hover:bg-white/30 text-white font-medium py-3 px-6 rounded-lg text-center backdrop-blur-sm transition cursor-pointer">Become a Sponsor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-10 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-primary">About the Event</h2>
+                <p class="text-base mb-6">The Tech Job Fair &amp; AI Conference connects Kosovo's top tech talent and companies — plus offers exclusive insights into expanding and investing in the U.S. market through our invite-only business workshop.</p>
+               
+                <div class="bg-light rounded-xl p-5 mb-6">
+                    <h3 class="font-bold text-lg mb-3">Event Dates &amp; Location</h3>
+                    <p class="font-medium mb-2">Swiss Diamond Hotel, Prishtina</p>
+                   
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-xs font-bold">08</span>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">October 8</p>
+                                <p class="text-sm text-dark/70">Exclusive Business Workshop (Invite Only)</p>
+                            </div>
+                        </div>
+                       
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-xs font-bold">09</span>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">October 9</p>
+                                <p class="text-sm text-dark/70">AI Conference</p>
+                            </div>
+                        </div>
+                       
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-xs font-bold">10</span>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">October 10</p>
+                                <p class="text-sm text-dark/70">Tech Job Fair</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <div class="rounded-lg overflow-hidden h-32">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/231d55b14f-b0732d729c437a177d6c.png" alt="tech conference networking event, people talking at booths, professional setting">
+                    </div>
+                    <div class="rounded-lg overflow-hidden h-32">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/77419661cb-f47db1cdf7be5df70ef0.png" alt="tech conference speaker presentation, audience listening, professional event">
+                    </div>
+                </div>
+               
+                <div class="bg-primary/5 rounded-lg p-4 flex items-center">
+                    <div class="mr-4 text-primary">
+                        <i class="fa-solid fa-users text-2xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Join 350+ professionals and 30+ companies expanding their future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda Section -->
+        <section id="agenda" class="py-10 px-4 bg-light">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-primary">Agenda Highlights</h2>
+               
+                <!-- Day 1 -->
+                <div class="bg-white rounded-xl p-5 mb-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-bold">October 8 — Exclusive Workshop</h3>
+                            <p class="text-sm text-dark/70">By invitation only</p>
+                        </div>
+                    </div>
+                   
+                    <div class="space-y-4 pl-13">
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">US Market Entry &amp; Investment Workshop</p>
+                            <p class="text-sm text-dark/70">Expand your business to the U.S. with Keith A. Carswell</p>
+                        </div>
+                       
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Investment Opportunities</p>
+                            <p class="text-sm text-dark/70">Networking lunch included</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Day 2 -->
+                <div class="bg-white rounded-xl p-5 mb-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-bold">October 9 — AI Conference</h3>
+                            <p class="text-sm text-dark/70">Open to all ticket holders</p>
+                        </div>
+                    </div>
+                   
+                    <div class="space-y-4 pl-13">
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Keynotes on AI in Government</p>
+                            <p class="text-sm text-dark/70">Data Science and Leadership</p>
+                        </div>
+                       
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Google's Presentation</p>
+                            <p class="text-sm text-dark/70">Building AI Agents</p>
+                        </div>
+                       
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Happy Hour Networking Party</p>
+                            <p class="text-sm text-dark/70">Open to all participants</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Day 3 -->
+                <div class="bg-white rounded-xl p-5 mb-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-bold">October 10 — Tech Job Fair</h3>
+                            <p class="text-sm text-dark/70">Career opportunities</p>
+                        </div>
+                    </div>
+                   
+                    <div class="space-y-4 pl-13">
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Connect with 30+ Tech Companies</p>
+                            <p class="text-sm text-dark/70">Hiring across software, data science, product design, and more</p>
+                        </div>
+                       
+                        <div class="border-l-2 border-primary/30 pl-4 relative">
+                            <div class="absolute w-2 h-2 bg-primary rounded-full -left-[5px] top-1.5"></div>
+                            <p class="font-medium">Student Packages</p>
+                            <p class="text-sm text-dark/70">Exclusive career courses included</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <span class="flex items-center justify-center py-3 px-4 bg-white border border-primary text-primary rounded-lg font-medium cursor-pointer">
+                    <i class="fa-solid fa-download mr-2"></i> Download Full Agenda PDF
+                </span>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="py-10 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-2 text-primary">Speakers Gallery</h2>
+                <p class="text-base mb-6">Meet the visionaries driving Kosovo's tech future</p>
+               
+                <!-- Speakers Carousel -->
+                <div class="overflow-x-auto pb-4 -mx-4 px-4">
+                    <div class="flex space-x-4 w-max">
+                        <!-- Speaker 1 -->
+                        <div id="speaker-1" class="bg-white rounded-xl shadow-sm overflow-hidden w-64 flex-shrink-0">
+                            <div class="h-64 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3aa4dbb1b5-1cb5ac8ba39972f022fe.png" alt="professional headshot of Keith A. Carswell, middle-aged African American man in business suit, city director, corporate portrait">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Keith A. Carswell</h3>
+                                <p class="text-sm text-dark/70 mb-2">Director for Economic Innovation and Development, City of Miami</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </span>
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Speaker 2 -->
+                        <div id="speaker-2" class="bg-white rounded-xl shadow-sm overflow-hidden w-64 flex-shrink-0">
+                            <div class="h-64 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a4bcdd82e2-8eb29707c9ebe379256a.png" alt="professional headshot of Renatto Garro, Latino man in his 30s, casual Google-style outfit, community manager, tech professional portrait">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Renatto Garro</h3>
+                                <p class="text-sm text-dark/70 mb-2">Community Manager at Google</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </span>
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Speaker 3 -->
+                        <div id="speaker-3" class="bg-white rounded-xl shadow-sm overflow-hidden w-64 flex-shrink-0">
+                            <div class="h-64 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/59699417a2-ca065990386a36a7c5a2.png" alt="professional headshot of a female tech executive, 40s, business casual attire, AI expert, confident pose">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Sarah Johnson</h3>
+                                <p class="text-sm text-dark/70 mb-2">AI Research Director, Tech Innovations</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </span>
+                                    <span class="text-primary cursor-pointer">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Pagination Dots -->
+                <div class="flex justify-center space-x-2 mt-4">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                    <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                </div>
+               
+                <div class="mt-6">
+                    <span class="text-primary font-medium flex items-center justify-center cursor-pointer">
+                        View All Speakers <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsorship Section -->
+        <section id="sponsors" class="py-10 px-4 bg-light">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-primary">Sponsorship Packages</h2>
+               
+                <!-- Package Cards -->
+                <div class="space-y-5">
+                    <!-- Basic Package -->
+                    <div id="package-basic" class="bg-white rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-primary/10 p-4">
+                            <h3 class="font-bold text-lg">Basic Sponsor</h3>
+                            <p class="text-2xl font-bold mt-1">€300</p>
+                        </div>
+                        <div class="p-4 space-y-3">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Booth at Tech Job Fair</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>2 AI Conference tickets</p>
+                            </div>
+                            <span class="block mt-4 py-3 text-center border border-primary text-primary rounded-lg font-medium cursor-pointer">Select Package</span>
+                        </div>
+                    </div>
+                   
+                    <!-- Standard Package -->
+                    <div id="package-standard" class="bg-white rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-primary/10 p-4">
+                            <h3 class="font-bold text-lg">Standard Sponsor</h3>
+                            <p class="text-2xl font-bold mt-1">€1,200</p>
+                        </div>
+                        <div class="p-4 space-y-3">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Booth at Tech Job Fair</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>3 AI Conference tickets</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>2 Passes to the Exclusive Business Workshop</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Logo Display on Social Media</p>
+                            </div>
+                            <span class="block mt-4 py-3 text-center border border-primary text-primary rounded-lg font-medium cursor-pointer">Select Package</span>
+                        </div>
+                    </div>
+                   
+                    <!-- Premium Package -->
+                    <div id="package-premium" class="bg-white rounded-xl overflow-hidden shadow-sm border-2 border-accent relative">
+                        <div class="absolute top-0 right-0 bg-accent text-dark px-3 py-1 text-xs font-bold rounded-bl-lg">BEST VALUE</div>
+                        <div class="bg-primary/10 p-4">
+                            <h3 class="font-bold text-lg">Premium Sponsor</h3>
+                            <p class="text-2xl font-bold mt-1">€3,500</p>
+                        </div>
+                        <div class="p-4 space-y-3">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Central Booth at Tech Job Fair (Prime Location)</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>5 AI Conference tickets</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>3 Passes to the Exclusive Business Workshop</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Sponsorship of AI Conference Happy Hour</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-primary mt-1 mr-3"></i>
+                                <p>Banner Display at AI Conference</p>
+                            </div>
+                            <span class="block mt-4 py-3 text-center bg-accent text-dark rounded-lg font-bold cursor-pointer">Select Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tickets Section -->
+        <section id="tickets" class="py-10 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-primary">Ticket Options</h2>
+               
+                <div class="space-y-5">
+                    <!-- Student Ticket -->
+                    <div id="ticket-student" class="bg-white rounded-xl overflow-hidden shadow-sm border border-border">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg">Student Tech Job Fair Ticket</h3>
+                            <p class="text-2xl font-bold text-primary mt-1">€15</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-graduation-cap text-primary mt-1 mr-3"></i>
+                                    <p>Access to Tech Job Fair</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-book text-primary mt-1 mr-3"></i>
+                                    <p>3 career courses included: CV Optimization, Portfolio Building, Interview Preparation</p>
+                                </div>
+                            </div>
+                            <span class="block mt-4 py-3 text-center bg-primary text-white rounded-lg font-medium cursor-pointer">Buy Ticket</span>
+                        </div>
+                    </div>
+                   
+                    <!-- Regular Ticket -->
+                    <div id="ticket-regular" class="bg-white rounded-xl overflow-hidden shadow-sm border border-border">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg">Tech Job Fair + AI Conference</h3>
+                            <div class="flex items-center mt-1">
+                                <p class="text-2xl font-bold text-primary">€50</p>
+                                <span class="ml-2 bg-accent text-dark text-xs px-2 py-1 rounded-full font-bold">EARLY BIRD</span>
+                            </div>
+                            <p class="text-sm text-dark/70 mt-1">Regular: €100</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-primary mt-1 mr-3"></i>
+                                    <p>Access to Tech Job Fair</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-microchip text-primary mt-1 mr-3"></i>
+                                    <p>Full access to AI Conference</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-champagne-glasses text-primary mt-1 mr-3"></i>
+                                    <p>Happy Hour Networking Event</p>
+                                </div>
+                            </div>
+                            <span class="block mt-4 py-3 text-center bg-primary text-white rounded-lg font-medium cursor-pointer">Buy Ticket</span>
+                        </div>
+                    </div>
+                   
+                    <!-- Full Experience -->
+                    <div id="ticket-full" class="bg-white rounded-xl overflow-hidden shadow-sm border-2 border-accent relative">
+                        <div class="absolute top-0 right-0 bg-accent text-dark px-3 py-1 text-xs font-bold rounded-bl-lg">PREMIUM</div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg">Full Experience Package</h3>
+                            <p class="text-2xl font-bold text-primary mt-1">€550</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-primary mt-1 mr-3"></i>
+                                    <p>Access to Tech Job Fair</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-microchip text-primary mt-1 mr-3"></i>
+                                    <p>Full access to AI Conference</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-building text-primary mt-1 mr-3"></i>
+                                    <p>Exclusive Business Workshop (Invite Only)</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-champagne-glasses text-primary mt-1 mr-3"></i>
+                                    <p>All Networking Events</p>
+                                </div>
+                            </div>
+                            <span class="block mt-4 py-3 text-center bg-accent text-dark rounded-lg font-bold cursor-pointer">Buy Ticket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Last Year Stats -->
+        <section id="stats" class="py-10 px-4 bg-primary">
+            <div class="container mx-auto text-white">
+                <h2 class="text-2xl font-bold mb-6 text-center">Last Year's Event Recap</h2>
+               
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="text-center">
+                        <p class="text-3xl font-bold mb-1">350+</p>
+                        <p class="text-sm">Attendees</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold mb-1">30+</p>
+                        <p class="text-sm">Companies</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold mb-1">35+</p>
+                        <p class="text-sm">Job Connections</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold mb-1">4+</p>
+                        <p class="text-sm">Full Scholarships</p>
+                    </div>
+                </div>
+               
+                <div class="mt-8 grid grid-cols-2 gap-3">
+                    <div class="rounded-lg overflow-hidden h-32">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d887f0d05e-fa09dd42a9b67c76f7b4.png" alt="tech job fair booth with company representatives talking to job seekers">
+                    </div>
+                    <div class="rounded-lg overflow-hidden h-32">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/231d55b14f-d15d18d9bb3544ac52bc.png" alt="tech conference networking event, people mingling with drinks, evening atmosphere">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="py-10 px-4">
+            <div class="container mx-auto">
+                <div class="bg-light rounded-xl p-6 text-center">
+                    <h2 class="text-xl font-bold mb-3">Ready to elevate your brand and career?</h2>
+                    <p class="text-base mb-6">Register your attendance or inquire about sponsorship opportunities today!</p>
+                    <div class="flex flex-col space-y-3 max-w-xs mx-auto">
+                        <span class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center shadow-sm transition cursor-pointer">Register Now</span>
+                        <span class="bg-white border border-primary text-primary font-medium py-3 px-6 rounded-lg text-center transition cursor-pointer">Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-10 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-primary">Contact Us</h2>
+                <p class="text-base mb-6">Have questions or want to learn more about sponsorship packages?</p>
+               
+                <div class="space-y-4 mb-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                        </div>
+                        <p>Email: <span class="text-primary cursor-pointer">info@techjobfair.com</span></p>
+                    </div>
+                   
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                        </div>
+                        <p>Phone: <span class="text-primary cursor-pointer">+383 44 123 456</span></p>
+                    </div>
+                </div>
+               
+                <!-- Contact Form -->
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:border-primary" placeholder="Your name">
+                    </div>
+                   
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:border-primary" placeholder="your@email.com">
+                    </div>
+                   
+                    <div>
+                        <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+                        <select id="subject" class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:border-primary">
+                            <option>General Inquiry</option>
+                            <option>Sponsorship Information</option>
+                            <option>Registration Question</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                   
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:border-primary" placeholder="Your message"></textarea>
+                    </div>
+                   
+                    <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center shadow-sm transition">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-6 mb-6">
+                <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center cursor-pointer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center cursor-pointer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+                <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center cursor-pointer">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </div>
+           
+            <div class="text-center text-sm text-white/70">
+                <p class="mb-2">© 2025 Tech Job Fair &amp; AI Conference. All rights reserved.</p>
+                <div class="flex justify-center space-x-4">
+                    <span class="hover:text-white cursor-pointer">Privacy Policy</span>
+                    <span class="hover:text-white cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body></html>
