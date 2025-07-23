@@ -1,0 +1,405 @@
+@media (max-width: 435px) {
+    html, body {
+    overflow-x: hidden;
+    }
+
+    header{
+        & nav{
+            & .navbar-brand{
+                font-size: 20px;
+            }
+
+        }
+    }
+
+    #hero{
+        background-image: url('../images/hero-bg-mobile.svg');
+
+        & h1{
+            font-size: 30px;
+        }
+
+        & h3{
+            font-size: 24px;
+        }
+
+        & p{
+            font-size: 18px;
+        }
+
+        & span{
+            font-size: 16px;
+            margin: 3% 0;
+        }
+
+        & button{
+            width: 100%;
+        }
+    }
+
+    #highlights{
+        padding: 3% 0;
+        background-color: #F0F0F0;
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .img-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            & img{
+                width: 100%;
+            }
+        }
+    }
+
+    #event{
+
+        & .intro{
+            & h1{
+                font-size: 24px;
+                margin-bottom: 5%;
+            }
+
+            & p{
+                font-size: 16px;
+            }
+        }
+
+        & h3{
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+
+        & .event-details{
+            background-color: #F0F0F0;
+            border-radius: 8px;
+            padding: 2%;
+
+            & h4{
+                font-size: 18px;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    #agendaHighlights{
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .agenda-title{
+
+            & span{
+                font-size: 16px;
+                text-wrap: nowrap;
+            }
+
+            & h6{
+                font-size: 20px;
+            }
+        }
+
+        & .agenda-list{
+            margin-bottom: 5%;
+
+            & .agenda-item{
+                & span{
+                    font-size: 14px;
+                }
+
+                & h6{
+                    font-size: 18px; 
+                }
+
+                & p{
+                    color: #4B5563;
+                    margin: 0;
+                }
+            }
+        }
+
+        & .btn-container{
+            & .btn-description{
+                text-align: center;
+            }
+        }
+    }
+
+    #meetTheSpeakers{
+        padding: 5% 0;
+
+        & .intro{
+            & h1{
+                font-size: 24px;
+            }
+
+            & p{
+                font-size: 18px;
+            }
+        }
+
+        & .card{
+            border: none;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0px 4px 6px 0px #0000001A;
+            box-shadow: 0px 2px 4px 0px #0000001A;
+            border-radius: 8px;
+            background-color: #F0F0F0;
+            height: 512px;
+
+            & .card-img-top{
+                height: 256px;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            & .arijana-img{
+                object-position: unset !important; 
+            }
+
+            & .card-body{
+                & h6{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #333333;
+                }
+
+                & p{
+                    font-weight: 500;
+                    color: #0057FF; 
+                }
+
+                & span{
+                    color: #4B5563;
+                }
+
+                & a .linkedin-icon{
+                    transition: all 0.3s ease;
+                    margin-top: auto;
+                }
+
+                & a .linkedin-icon:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+        & a{ 
+            & span{
+                font-weight: 700;
+                color: #0057FF;
+                transition: all 0.5s ease;
+            }
+
+            & span:hover{
+                color: #0041cc;
+                font-weight: 900;
+            }
+        }
+
+        & .slider-container-speakers{
+            position: relative;
+            overflow: hidden;
+
+            & .slider-speakers{
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                height: 100%;
+                width: 100%;
+
+                & .slide-speakers{
+                    min-width: 100%;
+                }
+            }
+        }
+
+    }
+
+    #sponsorship{
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .card{
+            height: 400px;
+
+            & .card-body{
+                height: 100%;
+
+                & p{
+                    font-size: 28px;
+                }
+            }
+
+        }
+
+        & .grey-card{
+
+            & h2{
+                font-size: 18px;
+            }
+
+            & .blue-btn{
+                margin-top: 10%;
+            }
+        }
+
+        & .blue-card{
+            transform: none;
+
+            & h2{
+                font-size: 18px;
+            }
+
+            & .yellow-btn{
+                margin-top: 10%;
+            }
+        }
+    }
+
+    #ticketOptions{
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .card{
+            height: 390px;
+
+            & .card-body{
+                height: 100%;
+
+                & p{
+                    font-size: 28px;
+                }
+            }
+        }
+
+        & .grey-card{
+            & h2{
+                font-size: 18px; 
+            }
+
+            & .blue-btn{
+                margin-top: 10%;
+            }
+        }
+
+        & .blue-card{
+            transform: none;
+
+            & h2{
+                font-size: 18px; 
+            }
+
+            & .yellow-btn{
+                margin-top: 10%;
+            }
+        }
+    }
+
+    #eventRecap{
+        padding: 5% 0;
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .card{
+            gap: 5px;
+
+            & h3{
+                font-size: 32px;
+            }
+
+            & p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    #ready{
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & p{
+            font-size: 18px;
+            margin-bottom: 5%;
+        }
+
+        & .yellow-btn{
+            width: 100%;
+        }
+
+        & .blue-btn{
+            width: 100%;
+        }   
+    }
+
+    #contactUs{
+
+        & h1{
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+
+        & .left-side{
+
+            & h3{
+                font-size: 24px;
+            }
+
+            & .mobile-bold-text{
+                text-align: center;
+            }
+
+            & .social-icons{
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+        }
+    }
+
+    footer{
+
+        & .upper-section{
+            padding: 5% 0;
+            color: #FFFFFF;
+
+            & h4{
+                font-size: 20px;
+            }
+
+            & h3{
+                font-size: 18px;
+                margin-top: 10%;
+            }
+
+            & .mobile-social-title{
+                text-align: center;
+            }
+        
+            & .social-media{
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+        }
+    }
+}
