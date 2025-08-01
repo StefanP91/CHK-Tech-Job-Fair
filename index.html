@@ -35,7 +35,73 @@
     
     </head>
 
-    <body class="manrope-regular">       
+    <body class="manrope-regular">
+        <!-- Brochure Modal -->
+        <div class="modal fade" id="brochureModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        <form method="POST" action="https://akoskarova.activehosted.com/proc.php" id="_form_982_" class="_form _form_982 _inline-form  _dark" novalidate data-styles-version="5">
+                            <input type="hidden" name="u" value="982" />
+                            <input type="hidden" name="f" value="982" />
+                            <input type="hidden" name="s" />
+                            <input type="hidden" name="c" value="0" />
+                            <input type="hidden" name="m" value="0" />
+                            <input type="hidden" name="act" value="sub" />
+                            <input type="hidden" name="v" value="2" />
+                            <input type="hidden" name="or" value="373d1a3173f88dfce6f8d6b70f132606" />
+                            <div class="_form-content">
+                                <div class="_form_element _x55364259 _full_width _clear" >
+                                <title class="_form-title">
+                                    Download our Brochure
+                                </title>
+                                </div>
+                                <div class="_form_element _x16531441 _full_width _clear" >
+                                <div class="_html-code">
+                                    <p>
+                                    Get all the details about our programs, courses, and events by downloading our brochure.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="_form_element _x04485674 _full_width " >
+                                <label for="fullname" class="_form-label">
+                                    Full Name<span class="field-required">
+                                    *
+                                </span>
+                                </label>
+                                <div class="_field-wrapper">
+                                <input type="text" id="fullname" name="fullname" placeholder="Type your name" required/>
+                                </div>
+                            </div>
+                            <div class="_form_element _x44000092 _full_width " >
+                                <label for="email" class="_form-label">
+                                Email<span class="field-required">
+                                *
+                                </span>
+                            </label>
+                            <div class="_field-wrapper">
+                                <input type="text" id="email" name="email" placeholder="Type your email" required/>
+                            </div>
+                            </div>
+                            <div class="_button-wrapper _full_width">
+                                <button id="_form_982_submit" class="_submit" type="submit">
+                                    Download
+                                </button>
+                            </div>
+                            <div class="_clear-element">
+                            </div>
+                            </div>
+                            <div class="_form-thank-you" style="display:none;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <header>
             <nav class="navbar navbar-expand-md">
                 <div class="container">
@@ -289,7 +355,7 @@
 
                     <div class="btn-container">
                         <a href="#">
-                            <button>
+                            <button data-bs-toggle="modal" data-bs-target="#brochureModal">
                                 <div class="hstack gap-2">
                                     <img src="images/agenda-btn-icon.svg" alt="agenda-btn-icon">
                                     <span>Download Full Agenda PDF</span>
